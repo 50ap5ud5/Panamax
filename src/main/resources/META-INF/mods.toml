@@ -1,0 +1,42 @@
+modLoader="javafml" #mandatory
+
+loaderVersion="[34,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+
+license="GPL-3.0-or-later"
+
+issueTrackerURL="http://my.issue.tracker/" #optional
+
+[[mods]] #mandatory
+
+modId="panamax" #mandatory
+
+version="${mod_version}" #mandatory
+ 
+displayName="Panamax" #mandatory
+
+updateJSONURL="http://myurl.me/" #optional
+
+displayURL="http://example.com/" #optional
+
+logoFile="examplemod.png" #optional
+
+credits="" #optional
+
+authors="50ap5ud5" #optional
+
+description='''
+Client Side Mod that allows for Orthographic Projection screenshots
+'''
+
+[[dependencies.panamax]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[34,)" 
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.panamax]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.3]"
+    ordering="NONE"
+    side="BOTH"
