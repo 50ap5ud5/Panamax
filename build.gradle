@@ -21,11 +21,7 @@ sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = co
 minecraft {
     mappings channel:"${mappings_type}", version: "${mappings_version}"
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
-    
-    // accessTransformer = file('build/resources/main/META-INF/accesstransformer.cfg')
-
-    // Default run configurations.
-    // These can be tweaked, removed, or duplicated as needed.
+ 
     runs {
         client {
             workingDirectory project.file('run')

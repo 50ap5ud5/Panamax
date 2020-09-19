@@ -10,7 +10,7 @@ issueTrackerURL="http://my.issue.tracker/" #optional
 
 modId="panamax" #mandatory
 
-version="${mod_version}" #mandatory
+version="${version}" #mandatory
  
 displayName="Panamax" #mandatory
 

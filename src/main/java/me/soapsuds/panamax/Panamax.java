@@ -19,7 +19,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-@Mod("panamax")
+@Mod(Panamax.MODID)
 public class Panamax {
 	
 	public static final String MODID = "panamax";
@@ -31,6 +31,7 @@ public class Panamax {
 	public Panamax() {
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 		MinecraftForge.EVENT_BUS.register(this);
+		MinecraftForge.EVENT_BUS.register(new ClientEvents());
 //		ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, PConfig.CONFIG_SPEC);
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 		DistExecutor.runWhenOn(Dist.CLIENT, () -> () -> FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setupClient));
